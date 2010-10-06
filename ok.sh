@@ -8,16 +8,22 @@ if test "`/usr/bin/id -u`" != 0 ; then
 fi
 DEBUG=1
 
+CONFIG_PATH=config
+if [ ! -d $CONFIG_PATH ] ; then
+	echo "没有配置文件，调用配ok-config命令置"
+	ok-config
+fi
+
 cd $(dirname $0)
 #请务必在下面填上自己的网关地址、账号和密码
 #网关地址:
-default_eth=eth0
+default_eth=`cat $CONFIG_PATH/eth`
 ppp_eth=ppp0
 
 #用户名:
-username=`cat config/user`
+username=`cat $CONFIG_PATH/user`
 #密码:
-password=`cat config/pass`
+password=`cat $CONFIG_PATH/pass`
 
 count=0
 maxcount=2  #拨号失败重试次数
@@ -71,16 +77,5 @@ if test -n $gateway_ip ; then
 	route add -net 202.202.0.0/16 gw $gateway_ip -e $default_eth > /dev/null 2>&1
 fi
 
-#route add deafult gw 113.251.216.1 -e ppp0
-#route add -net 172.0.0.0 netmask 255.0.0.0 gw $gateway
-#route add -net 202.202.0.0 netmask 255.255.0.0 gw $gateway
-#route add -net 211.83.0.0 netmask 255.255.0.0 gw $gateway
-#route add -net 202.38.97.230 netmask 255.255.255.255 gw $gateway	#交大更新源 ftp.sjtu.edu.cn
-#route add -net 202.38.93.66 netmask 255.255.255.255 gw $gateway		#科大更新源 debian.ustc.edu.cn
-#route add -net 202.115.22.208 netmask 255.255.255.255 gw $gateway	#电子科大更新源 ubuntu.usetc.edu.cn
-#route add -net 202.112.154.58 netmask 255.255.255.255 gw $gateway	#北交更新源 mirror.njtu.edu.cn
-#route add -net 60.191.81.189 netmask 255.255.255.255 gw $gateway	#163镜像 mirrors.163.com
-#route add -net 115.238.55.232 netmask 255.255.255.255 gw $gateway	#中标普华镜像 mirror.lupaworld.com
-#route add -net 219.153.42.248 netmask 255.255.255.255 gw $gateway	#net9镜像 mirror9.net9.org
 echo 处理结束
 exit 0
