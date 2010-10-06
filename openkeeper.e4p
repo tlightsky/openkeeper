@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Project SYSTEM "Project-4.6.dtd">
+<!-- eric4 project file for project openkeeper -->
+<!-- Saved: 2010-10-06, 17:15:22 -->
+<!-- Copyright (C) 2010 ,  -->
+<Project version="4.6">
+  <Language>en</Language>
+  <ProgLanguage mixed="0">Python</ProgLanguage>
+  <ProjectType>Qt4</ProjectType>
+  <Description></Description>
+  <Version>0.1</Version>
+  <Author></Author>
+  <Email></Email>
+  <Sources>
+    <Source>__init__.py</Source>
+    <Source>ui/Ui_mainwindow.py</Source>
+    <Source>main.py</Source>
+    <Source>ui/__init__.py</Source>
+    <Source>ui/Ui_aboutdialog.py</Source>
+    <Source>ui/images_rc.py</Source>
+    <Source>ui/Ui_accountdialog.py</Source>
+    <Source>ui/Ui_addaccountdialog.py</Source>
+    <Source>ui/aboutdialog.py</Source>
+    <Source>ui/mainwindow.py</Source>
+    <Source>util/__init__.py</Source>
+  </Sources>
+  <Forms>
+    <Form>ui/aboutdialog.ui</Form>
+    <Form>ui/accountdialog.ui</Form>
+    <Form>ui/addaccountdialog.ui</Form>
+    <Form>ui/mainwindow.ui</Form>
+  </Forms>
+  <Translations>
+  </Translations>
+  <Resources>
+    <Resource>ui/images.qrc</Resource>
+  </Resources>
+  <Interfaces>
+  </Interfaces>
+  <Others>
+  </Others>
+  <Vcs>
+    <VcsType>None</VcsType>
+  </Vcs>
+  <FiletypeAssociations>
+    <FiletypeAssociation pattern="*.ui" type="FORMS" />
+    <FiletypeAssociation pattern="*.idl" type="INTERFACES" />
+    <FiletypeAssociation pattern="*.qm" type="TRANSLATIONS" />
+    <FiletypeAssociation pattern="*.ptl" type="SOURCES" />
+    <FiletypeAssociation pattern="*.pyw" type="SOURCES" />
+    <FiletypeAssociation pattern="*.ui.h" type="FORMS" />
+    <FiletypeAssociation pattern="*.ts" type="TRANSLATIONS" />
+    <FiletypeAssociation pattern="*.py" type="SOURCES" />
+    <FiletypeAssociation pattern="*.qrc" type="RESOURCES" />
+  </FiletypeAssociations>
+</Project>
