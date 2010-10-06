@@ -28,6 +28,5 @@ $SUDOER cp * $INSTALL_PATH
 
 $SUDOER ln -sf $INSTALL_PATH/ok /usr/bin/ok 
 $SUDOER ln -sf $INSTALL_PATH/ok-stop /usr/bin/ok-stop 
-$SUDOER ln -sf $INSTALL_PATH/ok-setconfig /usr/bin/ok-setconfig
 
-echo "完成安装，使用ok拨号，使用ok-stop挂断，ok-config，重新设置"
+echo "���"

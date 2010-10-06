@@ -6,6 +6,7 @@ if test "`/usr/bin/id -u`" != 0 ; then
     echo "$0: You must be root to run this script" >& 2
     exit 1
 fi
+DEBUG=1
 
 cd $(dirname $0)
 #请务必在下面填上自己的网关地址、账号和密码
@@ -22,6 +23,7 @@ count=0
 maxcount=2  #拨号失败重试次数
 echo $username > Netkeeper.dat
 pppoe-stop > /dev/null 2>&1
+echo "尝试使用用户名$username,网卡$default_eth"
 until test -n "`ifconfig | grep ppp`"
 do
 	if [ "$count" != 0 ]
@@ -33,6 +35,7 @@ do
 	cp pap-secrets pap-secrets-tmp
 	#"0605852@cqupt"	*	"hqhqhq"
 	#USER='0605852@cqupt'
+	echo "ETH=$default_eth" >> pppoe.conf-tmp
 	echo "USER='\"$realusername\"'" >> pppoe.conf-tmp
 	echo "\"$realusername\"	*	\"$password\"" >> pap-secrets-tmp
 	#set s//\\/

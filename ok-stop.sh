@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo pppoe-stop
+sudo /usr/sbin/pppoe-stop
