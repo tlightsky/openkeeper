@@ -1,4 +1,4 @@
 #!/bin/bash
 INSTALL_PATH=/usr/local/openkeeper
 SUDOER=sudo
-$SUDOER $INSTALL_PATH/setconfig.sh
+$SUDOER $INSTALL_PATH/ok-config.sh

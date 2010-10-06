@@ -15,9 +15,9 @@ default_eth=eth0
 ppp_eth=ppp0
 
 #用户名:
-username=`cat user`
+username=`cat config/user`
 #密码:
-password=`cat pass`
+password=`cat config/pass`
 
 count=0
 maxcount=2  #拨号失败重试次数

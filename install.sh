@@ -14,7 +14,7 @@ cp dialnetkeeper ../
 make clean
 cd ..
 
-#$INSTALL_PATH/setconfig.sh
+#/usr/bin/ok-config
 
 if [ -d "$INSTALL_PATH" ]
 then
@@ -28,6 +28,6 @@ $SUDOER cp * $INSTALL_PATH
 
 $SUDOER ln -sf $INSTALL_PATH/ok /usr/bin/ok 
 $SUDOER ln -sf $INSTALL_PATH/ok-stop /usr/bin/ok-stop 
-$SUDOER ln -sf $INSTALL_PATH/ok-setconfig /usr/bin/ok-setconfig
+$SUDOER ln -sf $INSTALL_PATH/ok-config /usr/bin/ok-config
 
 echo "完成安装，使用ok拨号，使用ok-stop挂断，ok-config，重新设置"
