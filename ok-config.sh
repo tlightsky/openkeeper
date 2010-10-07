@@ -31,7 +31,7 @@ function setconfig() {
 		4) U=$2
 		;;
 		3) 
-			if [ "$4"="0"  ] ; then
+			if [ "$3" -eq "0"  ] ; then
 				echo $2
 				read U
 				if [ -n $U ] ; then
