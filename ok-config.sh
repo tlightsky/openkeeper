@@ -13,7 +13,7 @@ CONFIG_PATH=config
 function setconfig() {
 	read U
 	if [ -z $U ] ; then
-		echo "选择default"
+		echo "选择(default:$2)"
 		U=$2
 	fi
 	if [ -f $CONFIG_PATH/$1 ] ; then
@@ -25,12 +25,12 @@ function setconfig() {
 	chmod 600 $CONFIG_PATH/$1
 }
 
-echo "请输入用户名(default:chongzhi)"
+echo "请输入用户名"
 setconfig user chongzhi
 
-echo "请输入密码(default:chongzhi)"
-setconfig pass chongzhi
+echo "请输入密码"
+setconfig pass 123456
 
-echo "请输入网关(default:eth0)"
+echo "请输入网关"
 setconfig eth eth0
 

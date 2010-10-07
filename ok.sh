@@ -7,14 +7,14 @@ if test "`/usr/bin/id -u`" != 0 ; then
     exit 1
 fi
 DEBUG=1
+cd $(dirname $0)
 
 CONFIG_PATH=config
 if [ ! -d $CONFIG_PATH ] ; then
-	echo "没有配置文件，调用配ok-config命令置"
+	echo "没有配置文件，请调用配ok-config命令置"
 	ok-config
 fi
 
-cd $(dirname $0)
 #请务必在下面填上自己的网关地址、账号和密码
 #网关地址:
 default_eth=`cat $CONFIG_PATH/eth`
