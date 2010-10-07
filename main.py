@@ -20,6 +20,7 @@ if __name__ == "__main__":
     if not is_root():
         nd = NotrootDialog(mw)
         nd.show()
+        #log.info(mw.focusProxy())
         mw.setFocusProxy(nd)
         log.info("Not root,click to close!")
     

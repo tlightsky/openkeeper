@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file '/media/FILES/source/py/qt/openkeeper/ui/mainwindow.ui'
 #
-# Created: Thu Oct  7 09:34:35 2010
+# Created: Thu Oct  7 09:49:19 2010
 #      by: PyQt4 UI code generator 4.7.7
 #
 # WARNING! All changes made in this file will be lost!
@@ -57,6 +57,7 @@ class Ui_MainWindow(object):
         self.outter_net_username = QtGui.QComboBox(self.outter_login)
         self.outter_net_username.setEditable(True)
         self.outter_net_username.setObjectName(_fromUtf8("outter_net_username"))
+        self.outter_net_username.addItem(_fromUtf8(""))
         self.formLayout.setWidget(0, QtGui.QFormLayout.FieldRole, self.outter_net_username)
         self.outter_net_username_extra = QtGui.QLineEdit(self.outter_login)
         self.outter_net_username_extra.setObjectName(_fromUtf8("outter_net_username_extra"))
@@ -234,8 +235,10 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QtGui.QApplication.translate("MainWindow", "OpenKeeper", None, QtGui.QApplication.UnicodeUTF8))
         self.label.setText(QtGui.QApplication.translate("MainWindow", "帐号", None, QtGui.QApplication.UnicodeUTF8))
+        self.outter_net_username.setItemText(0, QtGui.QApplication.translate("MainWindow", "chongzhi", None, QtGui.QApplication.UnicodeUTF8))
         self.outter_net_username_extra.setText(QtGui.QApplication.translate("MainWindow", "@cqupt", None, QtGui.QApplication.UnicodeUTF8))
         self.label_2.setText(QtGui.QApplication.translate("MainWindow", "密码", None, QtGui.QApplication.UnicodeUTF8))
+        self.outter_net_password.setText(QtGui.QApplication.translate("MainWindow", "123456", None, QtGui.QApplication.UnicodeUTF8))
         self.label_7.setText(QtGui.QApplication.translate("MainWindow", "网卡", None, QtGui.QApplication.UnicodeUTF8))
         self.outter_eth_select.setItemText(0, QtGui.QApplication.translate("MainWindow", "eth0", None, QtGui.QApplication.UnicodeUTF8))
         self.outter_eth_select.setItemText(1, QtGui.QApplication.translate("MainWindow", "wlan0", None, QtGui.QApplication.UnicodeUTF8))

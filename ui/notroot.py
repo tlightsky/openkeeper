@@ -19,7 +19,6 @@ class NotrootDialog(QDialog, Ui_NotrootDialog):
         """
         QDialog.__init__(self, parent)
         self.setupUi(self)
-        self.setFocusProxy(parent)
         self.parent=parent
     
     def accept(self):
