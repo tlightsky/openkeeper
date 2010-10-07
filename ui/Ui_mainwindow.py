@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file '/media/FILES/source/py/qt/openkeeper/ui/mainwindow.ui'
 #
-# Created: Thu Oct  7 06:03:49 2010
+# Created: Thu Oct  7 09:49:19 2010
 #      by: PyQt4 UI code generator 4.7.7
 #
 # WARNING! All changes made in this file will be lost!
@@ -18,7 +18,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName(_fromUtf8("MainWindow"))
         MainWindow.setWindowModality(QtCore.Qt.WindowModal)
-        MainWindow.resize(246, 497)
+        MainWindow.resize(246, 510)
         sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -57,6 +57,7 @@ class Ui_MainWindow(object):
         self.outter_net_username = QtGui.QComboBox(self.outter_login)
         self.outter_net_username.setEditable(True)
         self.outter_net_username.setObjectName(_fromUtf8("outter_net_username"))
+        self.outter_net_username.addItem(_fromUtf8(""))
         self.formLayout.setWidget(0, QtGui.QFormLayout.FieldRole, self.outter_net_username)
         self.outter_net_username_extra = QtGui.QLineEdit(self.outter_login)
         self.outter_net_username_extra.setObjectName(_fromUtf8("outter_net_username_extra"))
@@ -86,6 +87,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout.setSizeConstraint(QtGui.QLayout.SetFixedSize)
         self.horizontalLayout.setObjectName(_fromUtf8("horizontalLayout"))
         self.outter_net_on = QtGui.QPushButton(self.outter_login)
+        self.outter_net_on.setCursor(QtCore.Qt.PointingHandCursor)
         self.outter_net_on.setObjectName(_fromUtf8("outter_net_on"))
         self.horizontalLayout.addWidget(self.outter_net_on)
         self.outter_net_off = QtGui.QPushButton(self.outter_login)
@@ -168,9 +170,11 @@ class Ui_MainWindow(object):
         self.horizontalLayout_2 = QtGui.QHBoxLayout()
         self.horizontalLayout_2.setObjectName(_fromUtf8("horizontalLayout_2"))
         self.pushButton_4 = QtGui.QPushButton(self.inner_login)
+        self.pushButton_4.setCursor(QtCore.Qt.PointingHandCursor)
         self.pushButton_4.setObjectName(_fromUtf8("pushButton_4"))
         self.horizontalLayout_2.addWidget(self.pushButton_4)
         self.pushButton_3 = QtGui.QPushButton(self.inner_login)
+        self.pushButton_3.setCursor(QtCore.Qt.PointingHandCursor)
         self.pushButton_3.setObjectName(_fromUtf8("pushButton_3"))
         self.horizontalLayout_2.addWidget(self.pushButton_3)
         self.verticalLayout_4.addLayout(self.horizontalLayout_2)
@@ -231,8 +235,10 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QtGui.QApplication.translate("MainWindow", "OpenKeeper", None, QtGui.QApplication.UnicodeUTF8))
         self.label.setText(QtGui.QApplication.translate("MainWindow", "帐号", None, QtGui.QApplication.UnicodeUTF8))
+        self.outter_net_username.setItemText(0, QtGui.QApplication.translate("MainWindow", "chongzhi", None, QtGui.QApplication.UnicodeUTF8))
         self.outter_net_username_extra.setText(QtGui.QApplication.translate("MainWindow", "@cqupt", None, QtGui.QApplication.UnicodeUTF8))
         self.label_2.setText(QtGui.QApplication.translate("MainWindow", "密码", None, QtGui.QApplication.UnicodeUTF8))
+        self.outter_net_password.setText(QtGui.QApplication.translate("MainWindow", "123456", None, QtGui.QApplication.UnicodeUTF8))
         self.label_7.setText(QtGui.QApplication.translate("MainWindow", "网卡", None, QtGui.QApplication.UnicodeUTF8))
         self.outter_eth_select.setItemText(0, QtGui.QApplication.translate("MainWindow", "eth0", None, QtGui.QApplication.UnicodeUTF8))
         self.outter_eth_select.setItemText(1, QtGui.QApplication.translate("MainWindow", "wlan0", None, QtGui.QApplication.UnicodeUTF8))

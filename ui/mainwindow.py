@@ -11,7 +11,7 @@ from PyQt4 import QtCore
 from PyQt4.QtGui import QMainWindow
 from PyQt4.QtCore import pyqtSignature
 from Ui_mainwindow import Ui_MainWindow
-from aboutdialog import AboutDialog
+from ui.aboutdialog import AboutDialog
 from util import logger
 
 try:
@@ -31,10 +31,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         """
         QMainWindow.__init__(self, parent)
         self.setupUi(self)
+        self.log = logger.Log.getInst() # 从单例获得logger
+        
         
         # 配置主程序相关
         self.statusBar.showMessage(_fromUtf8("主程序开始\n填入帐号密码就可以拨号了～"))
-        self.log = logger.Log.getInst() # 从单例获得logger
         
         #重定向命令输出
         QtCore.QObject.connect(self.outterCommandProcess, QtCore.SIGNAL(_fromUtf8("readyReadStandardOutput()")), self.outter_outputCommand)
@@ -66,22 +67,37 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     @pyqtSignature("")
     def on_outter_net_off_clicked(self):
         """
-        Slot documentation goes here.
+        实现挂断
         """
-        # TODO: not implemented yet
-        raise NotImplementedError
+        self.statusBar.showMessage(_fromUtf8("外网挂断..."))
+        self.outter_textBrowser.clear()
+        program = QtCore.QString(_fromUtf8("ok-stop"))
+        self.outterCommandProcess.terminate()
+        self.outterCommandProcess.start(program)
     
     @pyqtSignature("")
     def on_outter_net_on_clicked(self):
         """
         实现点击后拨号
         """
+        self.outter_textBrowser.clear()
+        self.statusBar.showMessage(_fromUtf8("外网拨号..."))
         # 先检查存储帐号否，若是，则存储
+        
         # 调用脚本设置参数
+        ok_config_program = " ".join(("ok-config",
+                        "-u",str(self.outter_net_username.currentText()
+                              +self.outter_net_username_extra.text()),
+                        "-p",str(self.outter_net_password.text()),
+                        "-e",str(self.outter_eth_select.currentText()),
+                        "-s",)
+                       )
+        #self.log.info("ok_config_program : "+ok_config_program)
+        os.system(ok_config_program)
         # 调用脚本进行拨号处理
         self.log.info("outter net on...")
         #args = QtCore.QStringList()
-        program = QtCore.QString("ok")
+        program = QtCore.QString(_fromUtf8("ok"))
         self.outterCommandProcess.terminate()
         self.outterCommandProcess.start(program)
         #self.outterCommandProcess.
