@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file '/media/FILES/source/py/qt/openkeeper/ui/mainwindow.ui'
 #
-# Created: Thu Oct  7 06:03:49 2010
+# Created: Thu Oct  7 09:34:35 2010
 #      by: PyQt4 UI code generator 4.7.7
 #
 # WARNING! All changes made in this file will be lost!
@@ -18,7 +18,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName(_fromUtf8("MainWindow"))
         MainWindow.setWindowModality(QtCore.Qt.WindowModal)
-        MainWindow.resize(246, 497)
+        MainWindow.resize(246, 510)
         sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -86,6 +86,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout.setSizeConstraint(QtGui.QLayout.SetFixedSize)
         self.horizontalLayout.setObjectName(_fromUtf8("horizontalLayout"))
         self.outter_net_on = QtGui.QPushButton(self.outter_login)
+        self.outter_net_on.setCursor(QtCore.Qt.PointingHandCursor)
         self.outter_net_on.setObjectName(_fromUtf8("outter_net_on"))
         self.horizontalLayout.addWidget(self.outter_net_on)
         self.outter_net_off = QtGui.QPushButton(self.outter_login)
@@ -168,9 +169,11 @@ class Ui_MainWindow(object):
         self.horizontalLayout_2 = QtGui.QHBoxLayout()
         self.horizontalLayout_2.setObjectName(_fromUtf8("horizontalLayout_2"))
         self.pushButton_4 = QtGui.QPushButton(self.inner_login)
+        self.pushButton_4.setCursor(QtCore.Qt.PointingHandCursor)
         self.pushButton_4.setObjectName(_fromUtf8("pushButton_4"))
         self.horizontalLayout_2.addWidget(self.pushButton_4)
         self.pushButton_3 = QtGui.QPushButton(self.inner_login)
+        self.pushButton_3.setCursor(QtCore.Qt.PointingHandCursor)
         self.pushButton_3.setObjectName(_fromUtf8("pushButton_3"))
         self.horizontalLayout_2.addWidget(self.pushButton_3)
         self.verticalLayout_4.addLayout(self.horizontalLayout_2)

@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file '/media/FILES/source/py/qt/openkeeper/ui/accountdialog.ui'
 #
-# Created: Thu Oct  7 18:32:06 2010
+# Created: Thu Oct  7 09:34:34 2010
 #      by: PyQt4 UI code generator 4.7.7
 #
 # WARNING! All changes made in this file will be lost!

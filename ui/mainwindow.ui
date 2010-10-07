@@ -10,7 +10,7 @@
     <x>0</x>
     <y>0</y>
     <width>246</width>
-    <height>497</height>
+    <height>510</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -138,6 +138,9 @@
              </property>
              <item>
               <widget class="QPushButton" name="outter_net_on">
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
                <property name="text">
                 <string>拨号</string>
                </property>
@@ -300,6 +303,9 @@
             <layout class="QHBoxLayout" name="horizontalLayout_2">
              <item>
               <widget class="QPushButton" name="pushButton_4">
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
                <property name="text">
                 <string>拨号</string>
                </property>
@@ -307,6 +313,9 @@
              </item>
              <item>
               <widget class="QPushButton" name="pushButton_3">
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
                <property name="text">
                 <string>挂断</string>
                </property>
