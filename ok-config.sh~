@@ -10,14 +10,12 @@ cd $MYDIR
 CONFIG_PATH=config
 [[ ! -d $CONFIG_PATH ]]&&mkdir $CONFIG_PATH
 
-sflag=0
 USAGE="$0 -u chongzhi -p 123456 -e eth0 -s"
-while getopts :u:p:e:s OPTION ; do
+while getopts :u:p:e OPTION ; do
 	case "$OPTION" in
 		u) user="$OPTARG" ;;
 		p) pass="$OPTARG" ;;
 		e) eth="$OPTARG" ;;
-		s) sflag=1 ;;
 		\?) echo "$USAGE" ;
 		exit 1
 		;;
@@ -25,25 +23,15 @@ while getopts :u:p:e:s OPTION ; do
 done
 
 function setconfig() {
-	#echo $#
-	#echo "setconfig $1 $2 $3 $4"
-	case "$#" in
-		4) U=$2
-		;;
-		3) 
-			if [ "$4"="0"  ] ; then
-				echo $2
-				read U
-				if [ -n $U ] ; then
-					echo "$1未更改"
-					return
-				fi
-			else
-				echo "跳过$1"
-				return
-			fi
-		;;
-	esac
+	if [ -z $2 ] ; then
+		U=$2
+	else
+	fi
+	read U
+	if [ -z $U ] ; then
+		echo "未更改"
+		return
+	fi
 	if [ -f $CONFIG_PATH/$1 ] ; then
 		echo "覆盖原$1"
 		rm $CONFIG_PATH/$1 > /dev/null 2>&1
@@ -54,6 +42,10 @@ function setconfig() {
 }
 
 
-setconfig user $user "请输入用户名" $sflag
-setconfig pass $pass "请输入密码" $sflag
-setconfig eth  $eth "请输入网关" $sflag
+#echo "请输入用户名"
+#setconfig user chongzhi
+#echo "请输入密码"
+#setconfig pass 123456
+#echo "请输入网关"
+#setconfig eth eth0
+echo $user
