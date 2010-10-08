@@ -1,0 +1,11 @@
+('/media/FILES/source/py/qt/openkeeper/build/pyi.linux2/main/main',
+ 1,
+ False,
+ None,
+ None,
+ None,
+ [],
+ False,
+ True,
+ 0,
+ 1286497113)

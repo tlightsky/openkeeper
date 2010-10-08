@@ -15,7 +15,6 @@ log.info("init main program")
 if __name__ == "__main__":
     app = QtGui.QApplication(sys.argv)
     mw= MainWindow()
-    mw.show()
     #检查是否root
     if not is_root():
         nd = NotrootDialog(mw)
@@ -23,5 +22,7 @@ if __name__ == "__main__":
         #log.info(mw.focusProxy())
         mw.setFocusProxy(nd)
         log.info("Not root,click to close!")
-    
+    else:
+        mw.show()
+        
     sys.exit(app.exec_())

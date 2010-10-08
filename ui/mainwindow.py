@@ -80,6 +80,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         """
         实现点击后拨号
         """
+        self.on_outter_net_off_clicked()
         self.outter_textBrowser.clear()
         self.statusBar.showMessage(_fromUtf8("外网拨号..."))
         # 先检查存储帐号否，若是，则存储

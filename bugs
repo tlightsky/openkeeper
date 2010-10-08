@@ -1,0 +1,10 @@
+    Traceback (most recent call last):
+      File "<string>", line 6, in <module>
+      File "/home/wangchao/source/PyInstaller/iu.py", line 477, in importHook
+      File "/home/wangchao/source/PyInstaller/iu.py", line 495, in doimport
+      File "/home/wangchao/source/PyInstaller/iu.py", line 297, in getmod
+      File "/home/wangchao/source/PyInstaller/archive.py", line 468, in getmod
+      File "/home/wangchao/source/PyInstaller/iu.py", line 109, in getmod
+    ImportError: /usr/lib/libgobject-2.0.so.0: undefined symbol: g_variant_type_copy
+
+

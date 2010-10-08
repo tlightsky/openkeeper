@@ -1,0 +1,12 @@
+('/media/FILES/source/py/qt/openkeeper/build/pyi.linux2/main/outPKG3.pkg',
+ {'BINARY': 1,
+  'DATA': 1,
+  'EXECUTABLE': 1,
+  'EXTENSION': 1,
+  'PYMODULE': 1,
+  'PYSOURCE': 1},
+ [('outPYZ1.pyz', '/media/FILES/source/py/qt/openkeeper/build/pyi.linux2/main/outPYZ1.pyz', 'PYZ'), ('iu', '/home/wangchao/source/PyInstaller/iu.pyc', 'PYMODULE'), ('struct', '/usr/lib/python2.6/struct.pyc', 'PYMODULE'), ('archive', '/home/wangchao/source/PyInstaller/archive.pyc', 'PYMODULE'), ('_mountzlib', '/home/wangchao/source/PyInstaller/support/_mountzlib.py', 'PYSOURCE'), ('useUnicode', '/home/wangchao/source/PyInstaller/support/useUnicode.py', 'PYSOURCE'), ('pyi_rth_qt4plugins', '/home/wangchao/source/PyInstaller/support/rthooks/pyi_rth_qt4plugins.py', 'PYSOURCE'), ('main', 'main.py', 'PYSOURCE')],
+ 1,
+ False,
+ True,
+ 0)
