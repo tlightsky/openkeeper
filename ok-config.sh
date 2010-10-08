@@ -34,7 +34,7 @@ function setconfig() {
 			if [ "$3" -eq "0"  ] ; then
 				echo $2
 				read U
-				if [ -n $U ] ; then
+				if [ -z $U ] ; then
 					echo "$1未更改"
 					return
 				fi
@@ -54,6 +54,6 @@ function setconfig() {
 }
 
 
-setconfig user $user "请输入用户名" $sflag
-setconfig pass $pass "请输入密码" $sflag
-setconfig eth  $eth "请输入网关" $sflag
+setconfig user $user "请输入用户名(chongzhi@cqupt)" $sflag
+setconfig pass $pass "请输入密码(123456)" $sflag
+setconfig eth  $eth "请输入网关(eth0)" $sflag
