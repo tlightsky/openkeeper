@@ -18,7 +18,7 @@ $SUDOER cp src/* $RELEASE_PATH/
 
 echo tar cfz $RELEASE_PATH.tar.gz $RELEASE_PATH
 tar cfz $RELEASE_PATH.tar.gz $RELEASE_PATH
-echo tar cfj $RELEASE_PATH.tar.bz2 $RELEASE_PATH
-tar cfj $RELEASE_PATH.tar.bz2 $RELEASE_PATH
+#echo tar cfj $RELEASE_PATH.tar.bz2 $RELEASE_PATH
+#tar cfj $RELEASE_PATH.tar.bz2 $RELEASE_PATH
 
 #$RELEASE_PATH/install.sh

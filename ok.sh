@@ -6,8 +6,9 @@ if test "`/usr/bin/id -u`" != 0 ; then
     echo "$0: You must be root to run this script" >& 2
     exit 1
 fi
-DEBUG=1
+#DEBUG=1
 cd $(dirname $0)
+PPPOE_START=/usr/sbin/pppoe-start
 
 CONFIG_PATH=config
 if [ ! -d $CONFIG_PATH ] ; then
@@ -39,15 +40,12 @@ do
 	realusername=${realusername//\"/\\\"}
 	cp pppoe.conf pppoe.conf-tmp
 	cp pap-secrets pap-secrets-tmp
-	#"0605852@cqupt"	*	"hqhqhq"
-	#USER='0605852@cqupt'
 	echo "ETH=$default_eth" >> pppoe.conf-tmp
 	echo "USER='\"$realusername\"'" >> pppoe.conf-tmp
 	echo "\"$realusername\"	*	\"$password\"" >> pap-secrets-tmp
-	#set s//\\/
 	cp pppoe.conf-tmp /etc/ppp/pppoe.conf
 	cp pap-secrets-tmp /etc/ppp/pap-secrets
-	pppoe-start #> /dev/null
+	$PPPOE_START
 	if test -n "`ifconfig|grep ppp`" ; then
 		break
 	else
