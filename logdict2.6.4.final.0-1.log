@@ -294,12 +294,12 @@ org: None -> None
 __main__: <Module __main__ /home/wangchao/source/PyInstaller/support/useUnicode.py imports=[('encodings', 0, 0, -1)] binaries=[] datas=[]> -> <Module __main__ main.py imports=[('sys', 0, 0, -1), ('os', 0, 0, -1), ('PyQt4', 0, 0, -1), ('PyQt4.QtGui', 0, 0, -1), ('ui.mainwindow', 0, 0, -1), ('ui.mainwindow.MainWindow', 0, 0, -1), ('util', 0, 0, -1), ('util.logger', 0, 0, -1), ('util.common', 0, 0, -1), ('util.common.*', 0, 0, -1), ('ui.notroot', 0, 0, -1), ('ui.notroot.NotrootDialog', 0, 0, -1)] binaries=[] datas=[]>
 PyQt4: None -> <Module PyQt4 /usr/lib/python2.6/dist-packages/PyQt4/__init__.pyc imports=[] binaries=[] datas=[]>
 PyQt4.QtGui: None -> <Module PyQt4.QtGui /usr/lib/python2.6/dist-packages/PyQt4/QtGui.so imports=[] binaries=[] datas=[]>
-ui: None -> <Module ui /media/FILES/source/py/qt/openkeeper/ui/__init__.pyc imports=[] binaries=[] datas=[]>
-ui.mainwindow: None -> <Module ui.mainwindow /media/FILES/source/py/qt/openkeeper/ui/mainwindow.pyc imports=[('os', 0, 0, -1), ('subprocess', 0, 0, -1), ('PyQt4', 0, 0, -1), ('PyQt4.QtCore', 0, 0, -1), ('PyQt4.QtGui', 0, 0, -1), ('PyQt4.QtGui.QMainWindow', 0, 0, -1), ('PyQt4.QtCore', 0, 0, -1), ('PyQt4.QtCore.pyqtSignature', 0, 0, -1), ('Ui_mainwindow', 0, 0, -1), ('Ui_mainwindow.Ui_MainWindow', 0, 0, -1), ('ui.aboutdialog', 0, 0, -1), ('ui.aboutdialog.AboutDialog', 0, 0, -1), ('util', 0, 0, -1), ('util.logger', 0, 0, -1)] binaries=[] datas=[]>
-util: None -> <Module util /media/FILES/source/py/qt/openkeeper/util/__init__.pyc imports=[] binaries=[] datas=[]>
-util.logger: None -> <Module util.logger /media/FILES/source/py/qt/openkeeper/util/logger.pyc imports=[('logging', 0, 0, -1), ('threading', 0, 0, -1)] binaries=[] datas=[]>
-util.common: None -> <Module util.common /media/FILES/source/py/qt/openkeeper/util/common.pyc imports=[('os', 0, 0, -1)] binaries=[] datas=[]>
-ui.notroot: None -> <Module ui.notroot /media/FILES/source/py/qt/openkeeper/ui/notroot.pyc imports=[('PyQt4.QtGui', 0, 0, -1), ('PyQt4.QtGui.QDialog', 0, 0, -1), ('PyQt4.QtCore', 0, 0, -1), ('PyQt4.QtCore.pyqtSignature', 0, 0, -1), ('Ui_notroot', 0, 0, -1), ('Ui_notroot.Ui_NotrootDialog', 0, 0, -1)] binaries=[] datas=[]>
+ui: None -> <Module ui /media/FILES/source/py/qt/ok/gui/ui/__init__.pyc imports=[] binaries=[] datas=[]>
+ui.mainwindow: None -> <Module ui.mainwindow /media/FILES/source/py/qt/ok/gui/ui/mainwindow.pyc imports=[('os', 0, 0, -1), ('subprocess', 0, 0, -1), ('PyQt4', 0, 0, -1), ('PyQt4.QtCore', 0, 0, -1), ('PyQt4.QtGui', 0, 0, -1), ('PyQt4.QtGui.QMainWindow', 0, 0, -1), ('PyQt4.QtCore', 0, 0, -1), ('PyQt4.QtCore.pyqtSignature', 0, 0, -1), ('Ui_mainwindow', 0, 0, -1), ('Ui_mainwindow.Ui_MainWindow', 0, 0, -1), ('ui.aboutdialog', 0, 0, -1), ('ui.aboutdialog.AboutDialog', 0, 0, -1), ('util', 0, 0, -1), ('util.logger', 0, 0, -1)] binaries=[] datas=[]>
+util: None -> <Module util /media/FILES/source/py/qt/ok/gui/util/__init__.pyc imports=[] binaries=[] datas=[]>
+util.logger: None -> <Module util.logger /media/FILES/source/py/qt/ok/gui/util/logger.pyc imports=[('logging', 0, 0, -1), ('threading', 0, 0, -1)] binaries=[] datas=[]>
+util.common: None -> <Module util.common /media/FILES/source/py/qt/ok/gui/util/common.pyc imports=[('os', 0, 0, -1)] binaries=[] datas=[]>
+ui.notroot: None -> <Module ui.notroot /media/FILES/source/py/qt/ok/gui/ui/notroot.pyc imports=[('PyQt4.QtGui', 0, 0, -1), ('PyQt4.QtGui.QDialog', 0, 0, -1), ('PyQt4.QtCore', 0, 0, -1), ('PyQt4.QtCore.pyqtSignature', 0, 0, -1), ('Ui_notroot', 0, 0, -1), ('Ui_notroot.Ui_NotrootDialog', 0, 0, -1)] binaries=[] datas=[]>
 _emx_link: None -> None
   DEL _emx_link
 _emx_link: None -> None
@@ -335,13 +335,13 @@ PyQt4._qt: None -> None
 ui.os: None -> None
 ui.subprocess: None -> None
 ui.PyQt4: None -> None
-ui.Ui_mainwindow: None -> <Module ui.Ui_mainwindow /media/FILES/source/py/qt/openkeeper/ui/Ui_mainwindow.pyc imports=[('PyQt4', 0, 0, -1), ('PyQt4.QtCore', 0, 0, -1), ('PyQt4.QtGui', 0, 0, -1), ('sys', 0, 1, -1)] binaries=[] datas=[]>
+ui.Ui_mainwindow: None -> <Module ui.Ui_mainwindow /media/FILES/source/py/qt/ok/gui/ui/Ui_mainwindow.pyc imports=[('PyQt4', 0, 0, -1), ('PyQt4.QtCore', 0, 0, -1), ('PyQt4.QtGui', 0, 0, -1), ('sys', 0, 1, -1)] binaries=[] datas=[]>
 ui.ui: None -> None
-ui.aboutdialog: None -> <Module ui.aboutdialog /media/FILES/source/py/qt/openkeeper/ui/aboutdialog.pyc imports=[('PyQt4.QtGui', 0, 0, -1), ('PyQt4.QtGui.QDialog', 0, 0, -1), ('PyQt4.QtCore', 0, 0, -1), ('PyQt4.QtCore.pyqtSignature', 0, 0, -1), ('Ui_aboutdialog', 0, 0, -1), ('Ui_aboutdialog.Ui_AboutDialog', 0, 0, -1)] binaries=[] datas=[]>
+ui.aboutdialog: None -> <Module ui.aboutdialog /media/FILES/source/py/qt/ok/gui/ui/aboutdialog.pyc imports=[('PyQt4.QtGui', 0, 0, -1), ('PyQt4.QtGui.QDialog', 0, 0, -1), ('PyQt4.QtCore', 0, 0, -1), ('PyQt4.QtCore.pyqtSignature', 0, 0, -1), ('Ui_aboutdialog', 0, 0, -1), ('Ui_aboutdialog.Ui_AboutDialog', 0, 0, -1)] binaries=[] datas=[]>
 ui.util: None -> None
 ui.sys: None -> None
-ui.Ui_aboutdialog: None -> <Module ui.Ui_aboutdialog /media/FILES/source/py/qt/openkeeper/ui/Ui_aboutdialog.pyc imports=[('PyQt4', 0, 0, -1), ('PyQt4.QtCore', 0, 0, -1), ('PyQt4.QtGui', 0, 0, -1), ('images_rc', 0, 0, -1), ('sys', 0, 1, -1)] binaries=[] datas=[]>
-ui.images_rc: None -> <Module ui.images_rc /media/FILES/source/py/qt/openkeeper/ui/images_rc.pyc imports=[('PyQt4', 0, 0, -1), ('PyQt4.QtCore', 0, 0, -1)] binaries=[] datas=[]>
+ui.Ui_aboutdialog: None -> <Module ui.Ui_aboutdialog /media/FILES/source/py/qt/ok/gui/ui/Ui_aboutdialog.pyc imports=[('PyQt4', 0, 0, -1), ('PyQt4.QtCore', 0, 0, -1), ('PyQt4.QtGui', 0, 0, -1), ('images_rc', 0, 0, -1), ('sys', 0, 1, -1)] binaries=[] datas=[]>
+ui.images_rc: None -> <Module ui.images_rc /media/FILES/source/py/qt/ok/gui/ui/images_rc.pyc imports=[('PyQt4', 0, 0, -1), ('PyQt4.QtCore', 0, 0, -1)] binaries=[] datas=[]>
 util.logging: None -> None
 logging: None -> <Module logging /usr/lib/python2.6/logging/__init__.pyc imports=[('sys', 0, 0, -1), ('os', 0, 0, -1), ('types', 0, 0, -1), ('time', 0, 0, -1), ('string', 0, 0, -1), ('cStringIO', 0, 0, -1), ('traceback', 0, 0, -1), ('codecs', 0, 0, -1), ('thread', 0, 0, -1), ('threading', 0, 0, -1), ('atexit', 0, 0, -1)] binaries=[] datas=[]>
 util.threading: None -> None
@@ -358,4 +358,4 @@ logging.threading: None -> None
 logging.atexit: None -> None
 atexit: None -> <Module atexit /usr/lib/python2.6/atexit.pyc imports=[('sys', 0, 0, -1), ('traceback', 1, 1, -1)] binaries=[] datas=[]>
 util.os: None -> None
-ui.Ui_notroot: None -> <Module ui.Ui_notroot /media/FILES/source/py/qt/openkeeper/ui/Ui_notroot.pyc imports=[('PyQt4', 0, 0, -1), ('PyQt4.QtCore', 0, 0, -1), ('PyQt4.QtGui', 0, 0, -1), ('sys', 0, 1, -1)] binaries=[] datas=[]>
+ui.Ui_notroot: None -> <Module ui.Ui_notroot /media/FILES/source/py/qt/ok/gui/ui/Ui_notroot.pyc imports=[('PyQt4', 0, 0, -1), ('PyQt4.QtCore', 0, 0, -1), ('PyQt4.QtGui', 0, 0, -1), ('sys', 0, 1, -1)] binaries=[] datas=[]>

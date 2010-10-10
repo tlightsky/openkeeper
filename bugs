@@ -8,3 +8,8 @@
     ImportError: /usr/lib/libgobject-2.0.so.0: undefined symbol: g_variant_type_copy
 
 
+
+/usr/sbin/pppoe-start
+user pass
+eth1
+

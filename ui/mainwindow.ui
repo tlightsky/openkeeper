@@ -10,7 +10,7 @@
     <x>0</x>
     <y>0</y>
     <width>246</width>
-    <height>510</height>
+    <height>658</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -29,7 +29,7 @@
    <bool>false</bool>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <layout class="QVBoxLayout" name="verticalLayout_5">
+   <layout class="QHBoxLayout" name="horizontalLayout_5">
     <property name="sizeConstraint">
      <enum>QLayout::SetFixedSize</enum>
     </property>
@@ -42,7 +42,7 @@
        <attribute name="title">
         <string>外网登录</string>
        </attribute>
-       <layout class="QVBoxLayout" name="verticalLayout_7">
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
         <item>
          <widget class="QGroupBox" name="outter_login">
           <property name="sizePolicy">
@@ -54,7 +54,7 @@
           <property name="title">
            <string/>
           </property>
-          <layout class="QVBoxLayout" name="verticalLayout">
+          <layout class="QVBoxLayout" name="verticalLayout_5">
            <item>
             <layout class="QFormLayout" name="formLayout">
              <property name="sizeConstraint">
@@ -132,6 +132,11 @@
                </item>
                <item>
                 <property name="text">
+                 <string>eth1</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
                  <string>wlan0</string>
                 </property>
                </item>
@@ -167,6 +172,39 @@
             </layout>
            </item>
            <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <property name="sizeConstraint">
+              <enum>QLayout::SetFixedSize</enum>
+             </property>
+             <item>
+              <widget class="QPushButton" name="outter_ip">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="text">
+                <string>外网IP</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="outter_route">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="text">
+                <string>查看路由</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
             <widget class="QTextBrowser" name="outter_textBrowser">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -177,7 +215,7 @@
              <property name="maximumSize">
               <size>
                <width>180</width>
-               <height>100</height>
+               <height>188</height>
               </size>
              </property>
             </widget>
@@ -196,6 +234,9 @@
              </item>
              <item>
               <widget class="QCheckBox" name="start_onboot">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
                <property name="text">
                 <string>开机自动启动</string>
                </property>
@@ -203,6 +244,9 @@
              </item>
              <item>
               <widget class="QCheckBox" name="login_inner_before_outter">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
                <property name="text">
                 <string>登录外网前先登录内网</string>
                </property>
@@ -226,7 +270,7 @@
         <item>
          <widget class="QGroupBox" name="inner_login">
           <property name="enabled">
-           <bool>true</bool>
+           <bool>false</bool>
           </property>
           <property name="sizePolicy">
            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
@@ -235,7 +279,7 @@
            </sizepolicy>
           </property>
           <property name="title">
-           <string/>
+           <string>本模块研发中。。。</string>
           </property>
           <property name="checkable">
            <bool>false</bool>
@@ -342,23 +386,10 @@
              <property name="maximumSize">
               <size>
                <width>180</width>
-               <height>100</height>
+               <height>192</height>
               </size>
              </property>
             </widget>
-           </item>
-           <item>
-            <spacer name="verticalSpacer">
-             <property name="orientation">
-              <enum>Qt::Vertical</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>20</width>
-               <height>40</height>
-              </size>
-             </property>
-            </spacer>
            </item>
            <item>
             <layout class="QVBoxLayout" name="verticalLayout_3">

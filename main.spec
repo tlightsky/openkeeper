@@ -1,6 +1,6 @@
 # -*- mode: python -*-
 a = Analysis([os.path.join(HOMEPATH,'support/_mountzlib.py'), os.path.join(HOMEPATH,'support/useUnicode.py'), 'main.py'],
-             pathex=['/media/FILES/source/py/qt/openkeeper'])
+             pathex=['/media/FILES/source/py/qt/ok/gui'])
 pyz = PYZ(a.pure)
 exe = EXE(pyz,
           a.scripts,

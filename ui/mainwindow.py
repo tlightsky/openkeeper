@@ -49,11 +49,13 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         # 处理标准输出流
         cmdoutput = QtCore.QByteArray()
         cmdoutput = self.outterCommandProcess.readAllStandardOutput()
+        self.log.info(cmdoutput)
         txtoutput = QtCore.QString(_fromUtf8(cmdoutput))
         
         # 处理标准错误流
         self.outter_textBrowser.append(txtoutput)
         cmdoutput = self.outterCommandProcess.readAllStandardError()
+        self.log.info(cmdoutput)
         txtoutput = QtCore.QString(_fromUtf8(cmdoutput))
         self.outter_textBrowser.append(txtoutput)
         
@@ -80,7 +82,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         """
         实现点击后拨号
         """
-        self.on_outter_net_off_clicked()
+        #self.on_outter_net_off_clicked()
         self.outter_textBrowser.clear()
         self.statusBar.showMessage(_fromUtf8("外网拨号..."))
         # 先检查存储帐号否，若是，则存储
