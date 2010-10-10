@@ -1,13 +1,12 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-# simple.py
 import sys, os
 from PyQt4 import QtGui
 from ui.mainwindow import MainWindow
 from util import logger
 from util.common import *
-from ui.notroot import NotrootDialog
+from ui.notrootdialog import NotrootDialog
 
 log = logger.Log.getInst()
 log.info("init main program")
@@ -20,7 +19,7 @@ if __name__ == "__main__":
         nd = NotrootDialog(mw)
         nd.show()
         #log.info(mw.focusProxy())
-        mw.setFocusProxy(nd)
+        #mw.setFocusProxy(nd)
         log.info("Not root,click to close!")
     else:
         mw.show()

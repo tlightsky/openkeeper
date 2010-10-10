@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>249</width>
-    <height>167</height>
+    <height>187</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -31,14 +31,17 @@
      </item>
      <item row="0" column="1">
       <widget class="QComboBox" name="comboBox_type">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
        <item>
         <property name="text">
-         <string>内网帐号</string>
+         <string>外网帐号</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>外网帐号</string>
+         <string>内网帐号</string>
         </property>
        </item>
       </widget>

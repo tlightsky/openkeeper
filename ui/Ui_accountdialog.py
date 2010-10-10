@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/media/FILES/source/py/qt/openkeeper/ui/accountdialog.ui'
+# Form implementation generated from reading ui file '/ok/gui/ui/accountdialog.ui'
 #
-# Created: Thu Oct  7 09:34:34 2010
+# Created: Mon Oct 11 04:12:31 2010
 #      by: PyQt4 UI code generator 4.7.7
 #
 # WARNING! All changes made in this file will be lost!
@@ -21,28 +21,28 @@ class Ui_AccountDialog(object):
         AccountDialog.setModal(True)
         self.horizontalLayout = QtGui.QHBoxLayout(AccountDialog)
         self.horizontalLayout.setObjectName(_fromUtf8("horizontalLayout"))
-        self.treeWidget = QtGui.QTreeWidget(AccountDialog)
+        self.accountsTreeWidget = QtGui.QTreeWidget(AccountDialog)
         sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.treeWidget.sizePolicy().hasHeightForWidth())
-        self.treeWidget.setSizePolicy(sizePolicy)
-        self.treeWidget.setFrameShape(QtGui.QFrame.StyledPanel)
-        self.treeWidget.setAutoScroll(True)
-        self.treeWidget.setVerticalScrollMode(QtGui.QAbstractItemView.ScrollPerPixel)
-        self.treeWidget.setHorizontalScrollMode(QtGui.QAbstractItemView.ScrollPerItem)
-        self.treeWidget.setIndentation(0)
-        self.treeWidget.setUniformRowHeights(True)
-        self.treeWidget.setAnimated(False)
-        self.treeWidget.setWordWrap(False)
-        self.treeWidget.setHeaderHidden(False)
-        self.treeWidget.setObjectName(_fromUtf8("treeWidget"))
-        self.treeWidget.header().setVisible(True)
-        self.treeWidget.header().setCascadingSectionResizes(True)
-        self.treeWidget.header().setDefaultSectionSize(100)
-        self.treeWidget.header().setHighlightSections(False)
-        self.treeWidget.header().setSortIndicatorShown(False)
-        self.horizontalLayout.addWidget(self.treeWidget)
+        sizePolicy.setHeightForWidth(self.accountsTreeWidget.sizePolicy().hasHeightForWidth())
+        self.accountsTreeWidget.setSizePolicy(sizePolicy)
+        self.accountsTreeWidget.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.accountsTreeWidget.setAutoScroll(True)
+        self.accountsTreeWidget.setVerticalScrollMode(QtGui.QAbstractItemView.ScrollPerPixel)
+        self.accountsTreeWidget.setHorizontalScrollMode(QtGui.QAbstractItemView.ScrollPerItem)
+        self.accountsTreeWidget.setIndentation(0)
+        self.accountsTreeWidget.setUniformRowHeights(True)
+        self.accountsTreeWidget.setAnimated(False)
+        self.accountsTreeWidget.setWordWrap(False)
+        self.accountsTreeWidget.setHeaderHidden(False)
+        self.accountsTreeWidget.setObjectName(_fromUtf8("accountsTreeWidget"))
+        self.accountsTreeWidget.header().setVisible(True)
+        self.accountsTreeWidget.header().setCascadingSectionResizes(True)
+        self.accountsTreeWidget.header().setDefaultSectionSize(100)
+        self.accountsTreeWidget.header().setHighlightSections(False)
+        self.accountsTreeWidget.header().setSortIndicatorShown(False)
+        self.horizontalLayout.addWidget(self.accountsTreeWidget)
         self.verticalLayout_2 = QtGui.QVBoxLayout()
         self.verticalLayout_2.setObjectName(_fromUtf8("verticalLayout_2"))
         self.pushButton_add = QtGui.QPushButton(AccountDialog)
@@ -70,9 +70,9 @@ class Ui_AccountDialog(object):
 
     def retranslateUi(self, AccountDialog):
         AccountDialog.setWindowTitle(QtGui.QApplication.translate("AccountDialog", "帐号管理", None, QtGui.QApplication.UnicodeUTF8))
-        self.treeWidget.headerItem().setText(0, QtGui.QApplication.translate("AccountDialog", "用户名", None, QtGui.QApplication.UnicodeUTF8))
-        self.treeWidget.headerItem().setText(1, QtGui.QApplication.translate("AccountDialog", "类型", None, QtGui.QApplication.UnicodeUTF8))
-        self.treeWidget.headerItem().setText(2, QtGui.QApplication.translate("AccountDialog", "默认值", None, QtGui.QApplication.UnicodeUTF8))
+        self.accountsTreeWidget.headerItem().setText(0, QtGui.QApplication.translate("AccountDialog", "用户名", None, QtGui.QApplication.UnicodeUTF8))
+        self.accountsTreeWidget.headerItem().setText(1, QtGui.QApplication.translate("AccountDialog", "类型", None, QtGui.QApplication.UnicodeUTF8))
+        self.accountsTreeWidget.headerItem().setText(2, QtGui.QApplication.translate("AccountDialog", "默认值", None, QtGui.QApplication.UnicodeUTF8))
         self.pushButton_add.setText(QtGui.QApplication.translate("AccountDialog", "添加帐号", None, QtGui.QApplication.UnicodeUTF8))
         self.pushButton_edit.setText(QtGui.QApplication.translate("AccountDialog", "修改帐号", None, QtGui.QApplication.UnicodeUTF8))
         self.pushButton_delete.setText(QtGui.QApplication.translate("AccountDialog", "删除帐号", None, QtGui.QApplication.UnicodeUTF8))

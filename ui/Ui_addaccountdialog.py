@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/media/FILES/source/py/qt/openkeeper/ui/addaccountdialog.ui'
+# Form implementation generated from reading ui file '/ok/gui/ui/addaccountdialog.ui'
 #
-# Created: Thu Oct  7 09:34:34 2010
+# Created: Mon Oct 11 04:12:31 2010
 #      by: PyQt4 UI code generator 4.7.7
 #
 # WARNING! All changes made in this file will be lost!
@@ -17,7 +17,7 @@ except AttributeError:
 class Ui_AddAccountDialog(object):
     def setupUi(self, AddAccountDialog):
         AddAccountDialog.setObjectName(_fromUtf8("AddAccountDialog"))
-        AddAccountDialog.resize(249, 167)
+        AddAccountDialog.resize(249, 187)
         AddAccountDialog.setModal(True)
         self.gridLayout = QtGui.QGridLayout(AddAccountDialog)
         self.gridLayout.setSizeConstraint(QtGui.QLayout.SetFixedSize)
@@ -28,6 +28,7 @@ class Ui_AddAccountDialog(object):
         self.label_3.setObjectName(_fromUtf8("label_3"))
         self.formLayout.setWidget(0, QtGui.QFormLayout.LabelRole, self.label_3)
         self.comboBox_type = QtGui.QComboBox(AddAccountDialog)
+        self.comboBox_type.setEnabled(False)
         self.comboBox_type.setObjectName(_fromUtf8("comboBox_type"))
         self.comboBox_type.addItem(_fromUtf8(""))
         self.comboBox_type.addItem(_fromUtf8(""))
@@ -66,8 +67,8 @@ class Ui_AddAccountDialog(object):
     def retranslateUi(self, AddAccountDialog):
         AddAccountDialog.setWindowTitle(QtGui.QApplication.translate("AddAccountDialog", "添加帐号", None, QtGui.QApplication.UnicodeUTF8))
         self.label_3.setText(QtGui.QApplication.translate("AddAccountDialog", "帐号类型", None, QtGui.QApplication.UnicodeUTF8))
-        self.comboBox_type.setItemText(0, QtGui.QApplication.translate("AddAccountDialog", "内网帐号", None, QtGui.QApplication.UnicodeUTF8))
-        self.comboBox_type.setItemText(1, QtGui.QApplication.translate("AddAccountDialog", "外网帐号", None, QtGui.QApplication.UnicodeUTF8))
+        self.comboBox_type.setItemText(0, QtGui.QApplication.translate("AddAccountDialog", "外网帐号", None, QtGui.QApplication.UnicodeUTF8))
+        self.comboBox_type.setItemText(1, QtGui.QApplication.translate("AddAccountDialog", "内网帐号", None, QtGui.QApplication.UnicodeUTF8))
         self.label.setText(QtGui.QApplication.translate("AddAccountDialog", "用户名：", None, QtGui.QApplication.UnicodeUTF8))
         self.label_2.setText(QtGui.QApplication.translate("AddAccountDialog", "密码：", None, QtGui.QApplication.UnicodeUTF8))
         self.checkBox_remember.setText(QtGui.QApplication.translate("AddAccountDialog", "记住密码", None, QtGui.QApplication.UnicodeUTF8))

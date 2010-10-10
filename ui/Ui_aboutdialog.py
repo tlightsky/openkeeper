@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/media/FILES/source/py/qt/openkeeper/ui/aboutdialog.ui'
+# Form implementation generated from reading ui file '/ok/gui/ui/aboutdialog.ui'
 #
-# Created: Thu Oct  7 09:34:33 2010
+# Created: Mon Oct 11 04:12:31 2010
 #      by: PyQt4 UI code generator 4.7.7
 #
 # WARNING! All changes made in this file will be lost!
@@ -57,9 +57,10 @@ class Ui_AboutDialog(object):
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'LiHei Pro\'; font-size:24pt; font-weight:600;\"></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'LiHei Pro\'; font-size:12pt;\">版本：GUI 1.0</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'LiHei Pro\'; font-size:12pt;\">程序设计：</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'LiHei Pro\'; font-size:12pt;\">    Qt代码实现：王超（TLightSky）</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'LiHei Pro\'; font-size:12pt;\">    登陆器脚本 ：王超（TLightSky）</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'LiHei Pro\'; font-size:12pt;\">    Qt界面设计：郭安琪</span></p></body></html>", None, QtGui.QApplication.UnicodeUTF8))
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'LiHei Pro\'; font-size:12pt;\">    Qt代码实现 ：王超（TLightSky）</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'LiHei Pro\'; font-size:12pt;\">    CLI脚本      ：王超（TLightSky）</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'LiHei Pro\'; font-size:12pt;\">    Qt界面设计 ：郭安琪，</span><span style=\" font-family:\'LiHei Pro\'; font-size:12pt;\">王超（TLightSky）</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'LiHei Pro\'; font-size:12pt;\">    Fedora测试：greysky</span></p></body></html>", None, QtGui.QApplication.UnicodeUTF8))
 
 import images_rc
 
