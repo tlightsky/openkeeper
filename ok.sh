@@ -64,11 +64,12 @@ tmp_ip=`/sbin/ifconfig $ppp_eth|awk "(/[0-9]?[0-9]?[0-9]\.[1-9]?[1-9]?[1-9]\.[0-
 tmp_ip=${tmp_ip%% *}
 ppp_ip=$tmp_ip
 # 添加外网路由
-route add default gw $ppp_ip -e $ppp_eth
+echo "外网IP:$ppp_ip"
+route add default -e $ppp_eth
 
 gateway_ip=`/sbin/route -n|grep 0.0.0.0.*172|cut -c17-28`
 if test -n $gateway_ip ; then
-	echo "为网关$gateway_ip添加内网路由..."
+	echo "为网关$default_eth:IP:$gateway_ip添加内网路由..."
 	route del -net 172.0.0.0/8 > /dev/null 2>&1
 	route del -net 202.202.0.0/16 > /dev/null 2>&1
 	route add -net 172.0.0.0/8 gw $gateway_ip -e $default_eth > /dev/null 2>&1

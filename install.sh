@@ -1,9 +1,19 @@
 #!/bin/bash
 SUDOER=sudo
 
+# Must be root
+if test "`/usr/bin/id -u`" != 0 ; then
+    echo "$0: You must be root to run this script" >& 2
+    exit 1
+fi
+
+
 INSTALL_PATH=/usr/local/openkeeper
+SH=bash
 MYDIR=`dirname $0`
 cd $MYDIR
+
+$SUDOER chmod 777 . -R
 
 $SUDOER rp-pppoe-3.10/ok-go
 $SUDOER cp pppoe-connect /usr/sbin/

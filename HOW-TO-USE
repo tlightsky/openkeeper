@@ -1,7 +1,13 @@
 HOW-TO-INSTALL
----------------------------------------
-简单的运行install.sh就ok了～
+==================
+sudo ./install.sh
 
 
+HOW-TO-USE
+==================
+ok-config:set the configuration
+ok:dial
+ok-stop:turn off ppp connection
 
 													--TLightSky
+
