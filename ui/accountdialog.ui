@@ -18,7 +18,7 @@
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout">
    <item>
-    <widget class="QTreeWidget" name="accountsTreeWidget">
+    <widget class="QTreeWidget" name="accounts">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
        <horstretch>0</horstretch>
@@ -74,7 +74,7 @@
      </column>
      <column>
       <property name="text">
-       <string>类型</string>
+       <string>是否外网</string>
       </property>
      </column>
      <column>
@@ -88,6 +88,9 @@
     <layout class="QVBoxLayout" name="verticalLayout_2">
      <item>
       <widget class="QPushButton" name="pushButton_add">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="text">
         <string>添加帐号</string>
        </property>
@@ -95,6 +98,9 @@
      </item>
      <item>
       <widget class="QPushButton" name="pushButton_edit">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="text">
         <string>修改帐号</string>
        </property>
@@ -102,6 +108,9 @@
      </item>
      <item>
       <widget class="QPushButton" name="pushButton_delete">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="text">
         <string>删除帐号</string>
        </property>
@@ -109,6 +118,9 @@
      </item>
      <item>
       <widget class="QPushButton" name="pushButton_setDefault">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="text">
         <string>设为默认值</string>
        </property>
@@ -116,6 +128,9 @@
      </item>
      <item>
       <widget class="QDialogButtonBox" name="buttonBox">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="orientation">
         <enum>Qt::Vertical</enum>
        </property>

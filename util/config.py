@@ -5,7 +5,7 @@ from ConfigParser import ConfigParser
 import os
 
 class OK_Config:
-    OK_GUI_CONF="ok-gui.cfg"
+    OK_GUI_CONF="/usr/local/openkeeper/ok-gui.cfg"
     OK_GUI_SECTION="ok-gui"
     def __init__(self,cfg=None):
         self.cfg = cfg

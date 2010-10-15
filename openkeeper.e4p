@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Project SYSTEM "Project-4.6.dtd">
 <!-- eric4 project file for project openkeeper -->
-<!-- Saved: 2010-10-10, 11:35:32 -->
+<!-- Saved: 2010-10-11, 06:28:25 -->
 <!-- Copyright (C) 2010 ,  -->
 <Project version="4.6">
   <Language>en</Language>
@@ -23,18 +23,17 @@
     <Source>ui/aboutdialog.py</Source>
     <Source>ui/mainwindow.py</Source>
     <Source>util/__init__.py</Source>
-    <Source>ui/Ui_notroot.py</Source>
-    <Source>ui/notroot.py</Source>
     <Source>util/logger.py</Source>
     <Source>util/config.py</Source>
     <Source>util/common.py</Source>
+    <Source>ui/Ui_notrootdialog.py</Source>
   </Sources>
   <Forms>
     <Form>ui/aboutdialog.ui</Form>
     <Form>ui/accountdialog.ui</Form>
     <Form>ui/addaccountdialog.ui</Form>
     <Form>ui/mainwindow.ui</Form>
-    <Form>ui/notroot.ui</Form>
+    <Form>ui/notrootdialog.ui</Form>
   </Forms>
   <Translations>
   </Translations>

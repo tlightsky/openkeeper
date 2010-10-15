@@ -2,34 +2,29 @@
 
 # Form implementation generated from reading ui file '/ok/gui/ui/notrootdialog.ui'
 #
-# Created: Sun Oct 10 16:32:34 2010
-#      by: PyQt4 UI code generator 4.7.7
+# Created: Sat Oct 16 01:22:50 2010
+#      by: PyQt4 UI code generator 4.7.4
 #
 # WARNING! All changes made in this file will be lost!
 
 from PyQt4 import QtCore, QtGui
 
-try:
-    _fromUtf8 = QtCore.QString.fromUtf8
-except AttributeError:
-    _fromUtf8 = lambda s: s
-
 class Ui_NotrootDialog(object):
     def setupUi(self, NotrootDialog):
-        NotrootDialog.setObjectName(_fromUtf8("NotrootDialog"))
+        NotrootDialog.setObjectName("NotrootDialog")
         NotrootDialog.resize(399, 151)
         self.buttonBox = QtGui.QDialogButtonBox(NotrootDialog)
         self.buttonBox.setGeometry(QtCore.QRect(30, 100, 341, 32))
         self.buttonBox.setOrientation(QtCore.Qt.Horizontal)
         self.buttonBox.setStandardButtons(QtGui.QDialogButtonBox.Ok)
-        self.buttonBox.setObjectName(_fromUtf8("buttonBox"))
+        self.buttonBox.setObjectName("buttonBox")
         self.label = QtGui.QLabel(NotrootDialog)
         self.label.setGeometry(QtCore.QRect(60, 20, 281, 81))
-        self.label.setObjectName(_fromUtf8("label"))
+        self.label.setObjectName("label")
 
         self.retranslateUi(NotrootDialog)
-        QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL(_fromUtf8("accepted()")), NotrootDialog.accept)
-        QtCore.QObject.connect(NotrootDialog, QtCore.SIGNAL(_fromUtf8("finished(int)")), NotrootDialog.accept)
+        QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL("accepted()"), NotrootDialog.accept)
+        QtCore.QObject.connect(NotrootDialog, QtCore.SIGNAL("finished(int)"), NotrootDialog.accept)
         QtCore.QMetaObject.connectSlotsByName(NotrootDialog)
 
     def retranslateUi(self, NotrootDialog):

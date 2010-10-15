@@ -1,3 +1,4 @@
 #!/bin/bash
+cd $(dirname $0)
 SUDOER=sudo
-$SUDOER 
+$SUDOER python main.py

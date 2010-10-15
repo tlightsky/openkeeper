@@ -19,10 +19,6 @@ class NotrootDialog(QDialog, Ui_NotrootDialog):
         """
         QDialog.__init__(self, parent)
         self.setupUi(self)
-        self.parent=parent
+        
     def accept(self):
-        """
-        Slot documentation goes here.
-        """
-        # TODO: not implemented yet
-        self.parent.close()    
+        self.parent().close()    
