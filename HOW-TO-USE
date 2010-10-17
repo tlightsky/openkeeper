@@ -1,3 +1,7 @@
+cli of openkeeper
+=======================
+that's it
+
 HOW-TO-INSTALL
 ==================
 sudo ./install.sh
@@ -8,6 +12,15 @@ HOW-TO-USE
 ok-config:set the configuration
 ok:dial
 ok-stop:turn off ppp connection
+
+TESTED
+==================
+ubuntu9.10
+ubuntu10.04
+ubuntu10.10
+fedora13
+suse11.3
+centos5.5
 
 													--TLightSky
 
