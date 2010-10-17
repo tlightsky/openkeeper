@@ -9,7 +9,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>246</width>
+    <width>250</width>
     <height>604</height>
    </rect>
   </property>
@@ -21,6 +21,9 @@
   </property>
   <property name="windowTitle">
    <string>OpenKeeper</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
   </property>
   <property name="animated">
    <bool>true</bool>
@@ -35,6 +38,9 @@
     </property>
     <item>
      <widget class="QTabWidget" name="tabWidget">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
       <property name="currentIndex">
        <number>0</number>
       </property>
@@ -50,6 +56,9 @@
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
           </property>
           <property name="title">
            <string>拨号后即可关闭</string>
@@ -382,8 +391,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>246</width>
-     <height>27</height>
+     <width>250</width>
+     <height>25</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu">
@@ -433,7 +442,10 @@
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="images.qrc"/>
+  <include location="background.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>action_exit</sender>

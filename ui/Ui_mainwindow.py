@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file '/ok/gui/ui/mainwindow.ui'
 #
-# Created: Sat Oct 16 01:22:49 2010
+# Created: Sat Oct 16 03:44:38 2010
 #      by: PyQt4 UI code generator 4.7.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -13,12 +13,13 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.setWindowModality(QtCore.Qt.WindowModal)
-        MainWindow.resize(246, 604)
+        MainWindow.resize(250, 604)
         sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(MainWindow.sizePolicy().hasHeightForWidth())
         MainWindow.setSizePolicy(sizePolicy)
+        MainWindow.setStyleSheet("None")
         MainWindow.setAnimated(True)
         MainWindow.setUnifiedTitleAndToolBarOnMac(False)
         self.centralWidget = QtGui.QWidget(MainWindow)
@@ -27,6 +28,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_5.setSizeConstraint(QtGui.QLayout.SetFixedSize)
         self.horizontalLayout_5.setObjectName("horizontalLayout_5")
         self.tabWidget = QtGui.QTabWidget(self.centralWidget)
+        self.tabWidget.setStyleSheet("None")
         self.tabWidget.setObjectName("tabWidget")
         self.tab = QtGui.QWidget()
         self.tab.setObjectName("tab")
@@ -38,6 +40,7 @@ class Ui_MainWindow(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.outter_login.sizePolicy().hasHeightForWidth())
         self.outter_login.setSizePolicy(sizePolicy)
+        self.outter_login.setStyleSheet("None")
         self.outter_login.setObjectName("outter_login")
         self.verticalLayout_5 = QtGui.QVBoxLayout(self.outter_login)
         self.verticalLayout_5.setObjectName("verticalLayout_5")
@@ -198,7 +201,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_5.addWidget(self.tabWidget)
         MainWindow.setCentralWidget(self.centralWidget)
         self.menuBar = QtGui.QMenuBar(MainWindow)
-        self.menuBar.setGeometry(QtCore.QRect(0, 0, 246, 27))
+        self.menuBar.setGeometry(QtCore.QRect(0, 0, 250, 25))
         self.menuBar.setObjectName("menuBar")
         self.menu = QtGui.QMenu(self.menuBar)
         self.menu.setObjectName("menu")
@@ -259,6 +262,8 @@ class Ui_MainWindow(object):
         self.action_about.setText(QtGui.QApplication.translate("MainWindow", "关于...(&A)", None, QtGui.QApplication.UnicodeUTF8))
         self.action_about.setShortcut(QtGui.QApplication.translate("MainWindow", "Ctrl+A", None, QtGui.QApplication.UnicodeUTF8))
 
+import images_rc
+import background_rc
 
 if __name__ == "__main__":
     import sys

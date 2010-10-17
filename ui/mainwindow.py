@@ -17,9 +17,12 @@ from util import logger, config
 
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
+    _toUtf8 = QtCore.QString.toUtf8
 except AttributeError:
     _fromUtf8 = lambda s: s
-to_s = lambda s: str(s)
+    _toUtf8 = lambda s: s
+def to_s(s):
+    return str(_toUtf8(s))
 
 class MainWindow(QMainWindow, Ui_MainWindow):
     """
@@ -50,29 +53,43 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         
     def refresh_gui(self):
         self.outter_net_username.clear()
+        #添加outter_users
         for item in self.config["outter_users"].keys():
             self.outter_net_username.addItem(_fromUtf8(item))
         self.outter_net_username.setEditText(_fromUtf8(self.config["outter_default_user"]))
-        #self.outter_net_password.setText(_fromUtf8(self.config["outter_users"][self.config["outter_default_user"]]))
+        self.outter_net_password.setText(_fromUtf8(self.config["outter_users"][self.config["outter_default_user"]]))
+
+        #添加outter_eths
         for item in self.config["outter_eths"]:
             self.outter_eth_select.addItem(_fromUtf8(item))
+        self.outter_eth_select.setEditText(_fromUtf8(self.config["outter_default_eth"]))
     
         
     def save_config(self):
         config.OK_Config().save_config(self.config) 
     def check_save_user(self):    
+        """
+        拨号过程中会自动检测本帐号是否需要记录进入配置文件，网关信息自动记录
+        """
+        
+        outter_eth_select=to_s(self.outter_eth_select.currentText())
+        self.log.info("默认网关(eth)改为:%s" % outter_eth_select)
+        self.config["outter_default_eth"]=outter_eth_select
+        if outter_eth_select not in self.config["outter_eths"]:
+            self.log.info("添加网关(eth):%s" % outter_eth_select)
+            self.config["outter_eths"].append(outter_eth_select)
+            
         self.log.info(self.config["outter_users"])
-        if self.outter_net_username.currentText() in self.config["outter_users"]:
+        if to_s(self.outter_net_username.currentText()) in self.config["outter_users"]:
             if self.outter_remember_passwd.isChecked():
                 self.log.info("refresh old user password")
                 self.config["outter_users"][to_s(self.outter_net_username.currentText())] = to_s(self.outter_net_password.text())
-            self.save_config()
         else:
             if self.outter_remember_passwd.isChecked():
                 self.config["outter_users"][to_s(self.outter_net_username.currentText())] = to_s(self.outter_net_password.text())
             else:
                 self.config["outter_users"][to_s(self.outter_net_username.currentText())] = ""
-            self.save_config()
+        self.save_config()
                 
     def outter_outputCommand(self):
         self.log.info("outter_outputCommand")
@@ -105,7 +122,14 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.outter_textBrowser.clear()
         program = QtCore.QString(_fromUtf8("ok-stop"))
         self.outterCommandProcess.terminate()
-        self.outterCommandProcess.start(program)
+        # 防止UI卡死，只尝试三次
+        for i in range(3):
+            if QtCore.QProcess.NotRunning==self.outterCommandProcess.state():
+                self.outterCommandProcess.start(program)
+                break
+            else:
+                self.outterCommandProcess.kill()
+                
     
     @pyqtSignature("")
     def on_outter_net_on_clicked(self):
@@ -113,7 +137,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         实现点击后拨号
         """
         self.outter_textBrowser.clear()
-        self.statusBar.showMessage(_fromUtf8("外网拨号..."))
+        self.statusBar.showMessage(_fromUtf8("外网拨号中...，完成后可关闭"))
         self.check_save_user()
         
         # 调用脚本设置参数
@@ -131,8 +155,13 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         #args = QtCore.QStringList()
         program = QtCore.QString(_fromUtf8("ok"))
         self.outterCommandProcess.terminate()
-        self.outterCommandProcess.start(program)
-        #self.outterCommandProcess.
+        # 防止UI卡死，只尝试三次
+        for i in range(3):
+            if QtCore.QProcess.NotRunning==self.outterCommandProcess.state():
+                self.outterCommandProcess.start(program)
+                break
+            else:
+                self.outterCommandProcess.kill()
     
     @pyqtSignature("bool")
     def on_start_onboot_toggled(self, checked):
