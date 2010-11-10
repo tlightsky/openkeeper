@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from ConfigParser import ConfigParser
-import os
+import os, stat
 
 class OK_Config:
     OK_GUI_CONF="/usr/local/openkeeper/ok-gui.cfg"
@@ -54,7 +54,7 @@ class OK_Config:
         self.set("outter_default_user",conf["outter_default_user"])
         self.set("outter_eths",",".join(conf["outter_eths"]))
         self.set("outter_default_eth",conf["outter_default_eth"])
-        
+        os.chmod(self.cfg, 0600);
         self.save()
      
 if __name__=="__main__":

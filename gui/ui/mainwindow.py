@@ -79,7 +79,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.log.info("添加网关(eth):%s" % outter_eth_select)
             self.config["outter_eths"].append(outter_eth_select)
             
-        self.log.info(self.config["outter_users"])
+        #self.log.info(self.config["outter_users"])
         if to_s(self.outter_net_username.currentText()) in self.config["outter_users"]:
             if self.outter_remember_passwd.isChecked():
                 self.log.info("refresh old user password")
