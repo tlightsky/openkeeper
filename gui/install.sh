@@ -3,4 +3,6 @@ INSTALL_PATH=/usr/local/openkeeper
 cd $(dirname $0)
 SUDOER=sudo
 
-$SUDOER cp ok-gui.bin $INSTALL_PATH/
+$SUDOER mkdir $INSTALL_PATH/gui > /dev/null 2>&1
+$SUDOER cp * $INSTALL_PATH/gui -r && echo 'Install Success'
+$SUDOER ln -sf $INSTALL_PATH/gui/ok-gui.sh /usr/bin/ok-gui

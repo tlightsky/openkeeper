@@ -1,7 +1,9 @@
-#Thu Nov 11 04:38:07 CST 2010
+#Thu Nov 11 05:57:06 CST 2010
 eclipse.preferences.version=1
 encoding//ui/Ui_aboutdialog.py=utf-8
+encoding//ui/Ui_addaccountdialog.py=utf-8
 encoding//ui/Ui_mainwindow.py=utf-8
+encoding//ui/addaccountdialog.py=utf-8
 encoding//ui/mainwindow.py=utf-8
 encoding//ui/notrootdialog.py=utf-8
 encoding//util/common.py=utf-8

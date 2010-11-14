@@ -54,8 +54,8 @@ class OK_Config:
         self.set("outter_default_user",conf["outter_default_user"])
         self.set("outter_eths",",".join(conf["outter_eths"]))
         self.set("outter_default_eth",conf["outter_default_eth"])
-        os.chmod(self.cfg, 0600);
         self.save()
+        os.chmod(self.cfg, 0600);
      
 if __name__=="__main__":
     okc = OK_Config()

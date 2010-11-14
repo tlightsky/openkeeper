@@ -44,14 +44,13 @@ class AddAccountDialog(QDialog, Ui_AddAccountDialog):
         conf = self.parent().parent().config
         log  = self.parent().parent().log
         user = to_s(self.lineEdit_username.text())
-        if self.is_new:
-            if user in conf["outter_users"]:
-                log.info("already exist,ignore..")
-            else:
-                if self.checkBox_remember.isChecked():
-                    conf["outter_users"][user] = to_s(self.checkBox_remember.text())
-                else:
-                    conf["outter_users"][user] = ""
+        if user in conf["outter_users"]:
+            log.info("already exist,edit it..")
+            
+        if self.checkBox_remember.isChecked():
+            conf["outter_users"][user] = to_s(self.lineEdit_password.text())
+        else:
+            conf["outter_users"][user] = ""
                     
         self.parent().refreshAccounts()
         self.parent().parent().save_config()
