@@ -1,0 +1,22 @@
+如何安装openkeeper（ubuntu为例）¶
+
+CLI版本安装
+-----------------------------------------------------------------------
+首先，你需要的是连接内网，
+apt-get 得到build-essential包
+然后运行openkeeper-cli 中的install.sh即进行编译安装。
+安装成功后有三个命令可以使用：
+ok：拨号
+ok-stop：断开
+ok-config：配置用户名，密码和网卡（eth0等）
+
+GUI版本安装
+-----------------------------------------------------------------------
+首先，同样是保证内网连接，
+然后apt-get得到python-qt4
+然后从命令行运行openkeeper-gui中的main.py：
+sudo main.py
+（制作快捷方式在ubuntu下可以用gksudo <PATH>/main.py）
+
+如果遇到什么问题，请及时在问题中反馈。
+
