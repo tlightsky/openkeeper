@@ -40,5 +40,6 @@ $SUDOER ln -sf $INSTALL_PATH/ok /usr/bin/ok
 $SUDOER ln -sf $INSTALL_PATH/ok-stop /usr/bin/ok-stop 
 $SUDOER ln -sf $INSTALL_PATH/ok-config /usr/bin/ok-config
 
-echo "完成安装，使用ok拨号，使用ok-stop挂断，ok-config进行设置"
+echo "安装结束，使用ok拨号，使用ok-stop挂断，ok-config进行设置"
+echo "如果在安装中出现No之类的错误提示，请先安装build-essential(g++)编译器，再重新安装！"
 

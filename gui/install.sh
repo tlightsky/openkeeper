@@ -3,6 +3,11 @@ INSTALL_PATH=/usr/local/openkeeper
 cd $(dirname $0)
 SUDOER=sudo
 
+if [ ! -d $INSTALL_PATH ] ; then
+	echo "请先安装cli版本！"
+	exit 1;
+fi
+
 if [ ! -d $INSTALL_PATH/gui ] ; then
 	$SUDOER mkdir $INSTALL_PATH/gui #> /dev/null 2>&1
 fi
